@@ -34,6 +34,26 @@ $('.navbar-collapse ul li a').click(function() {
   }
 });
 
+// Technology Img Carousel
+$('#theCarousel').carousel({
+  interval: false
+})
+
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  }
+  else {
+  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+
 /*
 // Google Maps Scripts
 // var map = null;
