@@ -9,6 +9,13 @@ html {
   width: 100%;
   height: 100%;
 }
+
+.devicons {
+  font-size: 100px;
+  color: #42DCA3;
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -23,7 +30,7 @@ h6 {
 }
 p {
   margin: 0 0 25px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
@@ -119,12 +126,12 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/black_noise.gif) repeat bottom center scroll;
   background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  background-size: initial;
+  -o-background-size: initial;
 }
 .intro .intro-body {
   display: table-cell;
@@ -212,37 +219,47 @@ a:focus {
     transform: scale(1);
   }
 }
-.content-section {
-  padding-top: 100px;
+
+.section-border {
+  width: auto;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background: url(../img/steel.jpg) repeat-x;
+  background-color: black;
 }
-.download-section {
+
+.content-section-wimg {
   width: 100%;
-  padding: 50px 0;
+  padding: 100px 0 100px 0;
   color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  background: url(../img/black_wood.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
-#map {
+
+.content-section {
   width: 100%;
-  height: 200px;
-  margin-top: 100px;
+  padding: 100px 0 100px 0;
+  color: white;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
-@media (min-width: 767px) {
-  .content-section {
-    padding-top: 250px;
-  }
-  .download-section {
-    padding: 100px 0;
-  }
-  #map {
-    height: 400px;
-    margin-top: 250px;
-  }
+
+.project-info {
+  padding: 10px;
+  border: solid white 1px;
+  margin: 10px 0;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 10px;
 }
+
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -252,6 +269,7 @@ a:focus {
   transition: all 0.3s ease-in-out;
   border-radius: 0;
 }
+
 .btn-default {
   border: 1px solid #42DCA3;
   color: #42DCA3;
@@ -264,6 +282,13 @@ a:focus {
   color: black;
   background-color: #42DCA3;
 }
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 ul.banner-social-buttons {
   margin-top: 0;
 }
