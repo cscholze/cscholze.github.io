@@ -14,6 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Lightbox2 CSS -->
+    <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
@@ -103,7 +106,7 @@
             </div>
             <div class="col-sm-9">
               <p> Life is the persistence of creation. Both in biology and technology, the moment of creation begins
-                  the existence of that which previously did not exists. All my life I've had in insatiable curiosity
+                  the existence of that which previously did not exists. All my life I've had an insatiable curiosity
                   to answer the questions how and why. Why do I experience emotions? How does a transistor work?
                   Why does liquid gasoline move a car down the street? How does electricity make a computer operate?
                   To this day I'm forever searching for the answers to questions and new questions to answer. The most
@@ -123,40 +126,46 @@
     <section id="projects" class="content-section-wimg text-center">
       <div class="projects">
         <div class="container-fluid">
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-sm-10 col-sm-offset-1">
             <h2>Projects</h2>
             <p>Most of my work is available on GitHub, but here are select projects.</p>
 
             <div class="row project-info">
-              <div class="col-md-3">
+              <div class="col-sm-3">
                 <h3><a class="btn btn-default btn-lg vcenter"
                     href="https://jcsdevnsscapstone1.firebaseapp.com/"
                     alt="Chart-It">Chart-It</a>
                 </h3>
+                <a href="img/chart-it-ss.jpg" data-lightbox="chart-it" data-title="Chart-It">
+                  <img src="img/chart-it-ss.jpg" class="img-thumbnail img-responsive" alt="Chart-It Screenshot">
+                </a>
               </div>
-              <div class="col-md-9">
+              <div class="col-sm-9">
                 <p> My creative outlet is music. I primarily jam on a guitar or bass, but will tinker with
-                  anything that makes a sound. Chart-It arose from my frustration with trying manage
+                  anything that makes a sound. Chart-It arose from my frustration with trying to manage
                   binders full of hand written/typed song charts. As I found myself usually sitting before
                   a computer when playing, I created a web app where I could create, store, and easily view
                   charts I had created.
                 </p>
                 <p>
                   This particular project uses AngularJS and Bootstrap to create, save, and view song charts.
-                  It features user authentication an data stroage with Firebase, where it is currently deployed.
+                  It features user authentication an data storage with Firebase, where it is currently deployed.
                   Check out the GithHub repo for details on features and function.
                 </p>
               </div>
             </div>
 
             <div class="row project-info">
-              <div class="col-md-3 col-md-push-9">
+              <div class="col-sm-3 col-sm-push-9">
                 <h3><a class="btn btn-default btn-lg"
                        href="https://github.com/cscholze/discover-me"
                        alt="DiscoverMe">DiscoverMe</a>
                 </h3>
+                <a href="img/discover-me-ss.jpg" data-lightbox="discover-me" data-title="DiscoverMe">
+                  <img src="img/discover-me-ss.jpg" class="img-thumbnail img-responsive" alt="DiscoverMe Screenshot">
+                </a>
               </div>
-              <div class="col-md-9 col-md-pull-3">
+              <div class="col-sm-9 col-sm-pull-3">
                 <p> Writing software for the internet opened my eyes to the world of security. While software
                     can create incredible solutions, it can also be exploited. Software security ranges from
                     writing secure code to ensuring that your devices and networks are also safe from attack
@@ -293,6 +302,9 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <!-- lightbox2 -->
+    <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
